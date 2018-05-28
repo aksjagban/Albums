@@ -1,4 +1,8 @@
-# Program takes selected albums data (i.e. #id, artist, album, year) which I have in my Linux directory: /home/user/Music/Albums and returns script.sql to insert album data as values into table created in MySQL database. All used folders have in this case the same structure: /home/user/Music/Albums/Artist/Year - Album. If you want to test this program on your computer, replace 'user' catalogue name - and other catalogue names if necessary - respectively by your user name - and other catalogue names - on your Linux. Script is executed in MySQL with command: "source script.sql".
+# Program takes selected albums data (i.e. #id, artist, album, year) which I have in my Linux directory: /home/user/Music/Albums and returns script.sql to insert album data as values into table created in MySQL database. 
+# All used folders have in this case the same structure: /home/user/Music/Albums/Artist/Year - Album. 
+# If you want to test this program on your computer, replace 'user' catalogue name - and other catalogue names if necessary - respectively by your user name - and other catalogue names - on your Linux. 
+# Folders to testing have been included in 'Albums.zip'.
+# Script is executed in MySQL with command: "source script.sql".
 # -*- coding: utf-8 -*-
 import os
 import re
