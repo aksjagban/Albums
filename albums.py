@@ -19,7 +19,6 @@ for artist in os.listdir(r'/home/user/Music/Albums'):
 		apoalbum = album.group().replace('\'', '\\'+'\'')
 
 #	Main key in SQL table as albumno.
-
 		albumno = albumno + 1
 		data = ("INSERT INTO my_albums (Album_Id, Artist , Album , Year) VALUES ('"+"#"+str(albumno)+"' , '"+apoartist+"' , '"+apoalbum+"' , "+year.group()+");")
 		print(data)
@@ -33,3 +32,6 @@ with open('script.sql', 'r+') as f:
 	script = f.read()
 	f.seek(0, 0)
 	f.write(firstline.rstrip('\r\n') + '\n' + script)
+
+	
+	
