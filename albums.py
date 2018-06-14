@@ -6,7 +6,7 @@ import re
 #	Matching regular expressions for album year and album name:
 albumno = 0
 for artist in os.listdir(r'/home/user/Music/Albums'):
-	for yearalbum in os.listdir(r'/home/user/Music/Albums'+artist):
+	for yearalbum in os.listdir(r'/home/user/Music/Albums/'+artist):
 
 		yearregex = re.compile(r'\d\d\d\d')
 		year = yearregex.search(yearalbum)
